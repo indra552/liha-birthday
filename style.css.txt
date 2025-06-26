@@ -1,0 +1,102 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fce4ec;
+  color: #4a148c;
+  text-align: center;
+  padding: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #880e4f;
+}
+
+p {
+  font-size: 1.2em;
+  color: #d81b60;
+}
+
+.gift-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 30px;
+  animation: bounce 0.5s infinite alternate;
+}
+
+.gift {
+  font-size: 5em;
+  background-color: #ff4081;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.gift-box:hover .gift {
+  transform: scale(1.1);
+}
+
+.letter {
+  display: none;
+  margin-top: 30px;
+  background: #f3e5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #880e4f;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #880e4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .gift {
+    font-size: 4em;
+  }
+
+  textarea {
+    font-size: 1em;
+  }
+}
